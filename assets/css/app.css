@@ -1,0 +1,11 @@
+body{
+background-image: url("https://farm5.staticflickr.com/4467/37761842522_5afdf959dc_b.jpg");
+-webkit-background-size: 100%;
+-moz-background-size: 100%;
+background-size: cover;
+background-repeat:no-repeat;
+-o-background-size: 100%;
+padding-top: 25px;
+margin-top: 100px;
+position: relative;
+}
