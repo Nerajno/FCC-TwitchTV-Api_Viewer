@@ -9,3 +9,58 @@ padding-top: 25px;
 margin-top: 100px;
 position: relative;
 }
+
+/* Start of Navbar Stuff */
+.navbar-inverse{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
+  color:#3B81BF;
+  font-size: larger;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #3B81BF;
+}
+
+.dropdown{
+  color: #3B81BF;
+  text-transform:uppercase;
+}
+
+.dropdown-menu>li>a{
+  color: #3B81BF;
+  text-transform:uppercase;
+}
+
+
+/*Footer*/
+footer{
+  font-family: inherit;
+  color:#fff;
+  text-align: center;
+}
+
+
+.Twtbtn{
+  padding: 3px;
+  margin: 5px;
+  border-radius: 7px;
+  background-color: black;
+  border-color: black;
+}
+
+/*.Twtbtn:hover{
+  transform: scale(2.5);
+}*/
+
+/*.fa-twitter:hover{
+  transform: scale(4) rotate(360deg);
+}*/
+
+.btn-navbar{
+  background-color: #f0641f;
+  color: black;
+}
