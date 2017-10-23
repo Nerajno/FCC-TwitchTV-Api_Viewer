@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta charset="utf-8">
-    <title>FCC Twitvh Viewer</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta charset="utf-8">
+  <title>FCC Twitvh Viewer</title>
 
-    <!--Links for CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+  <!--Links for CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <link href="assets/css/app.css" rel="stylesheet" type="text/css">
 
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans" rel="stylesheet">
-  </head>
-  <body>
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans" rel="stylesheet">
+</head>
+<body>
 
-    <nav>
-      <div class="navbar navbar-inverse navbar-fixed-top"> <!-- Navbar -->
+  <nav>
+    <div class="navbar navbar-inverse navbar-fixed-top"> <!-- Navbar -->
       <div class="container"> <!-- Container -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -53,7 +53,30 @@
     </div><!-- <end of navbar > -->
     </nav>
 
-    <main>
+    <main class="container">
+
+      <div <class="text-center" id="header">
+        <h1>Free<i class="fa fa-free-code-camp" aria-hidden="true"></i>Code Camp</h1>
+        <h2>Twitch Viewer</h2>
+        <h3 id="fccstatus"></h3>
+      </div>
+
+      <div class="row">
+        <h1>
+          <div class="col-md-4">
+           Logo:
+          </div>
+          <div class="col-md-4">
+            Display Name:
+          </div>
+          <div class="col-md-4">
+            Status:  
+            </div>
+        </h1>
+      </div>
+      <div id="followerInfo">
+
+      </div>
 
       <!-- Js Scripts    -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>"
@@ -64,4 +87,4 @@
       <p>Version 0.21</p>
     </footer>
   </body>
-</html>
+  </html>
