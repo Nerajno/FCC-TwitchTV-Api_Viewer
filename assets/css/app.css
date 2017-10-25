@@ -35,6 +35,10 @@ position: relative;
   text-transform:uppercase;
 }
 
+.container{
+  color: white;
+}
+
 
 /*Footer*/
 footer{
