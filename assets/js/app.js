@@ -2,20 +2,19 @@ var channels =["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck",
 //Runs Jquery
 $(document).ready(function(){
   // Fetches FCC Stream info and api status call
-  //Test
-  // var url ="https://wind-bow.glitch.me/twitch-api/streams/"+channels[10]
   //The main api
-  var url2 = "https://wind-bow.glitch.me/twitch-api/streams/"
+  var url2 = "https://wind-bow.glitch.me/twitch-api/streams/";
   var i = 0;
-  var channelStatus = data1.stream;
   while (i <channels.length){
-    console.log(url2+channels[i]+channelStatus);
+    console.log(url2+channels[i]);
     i++;
   }
-  $.getJSON(url2,function(data1){
-    // var channelStatus = data1.stream;
-    // console.log(channelStatus);
+  var testing = url2+channels[1]
+  var exercise = url2+channels[3]
+  // console.log(testing);
+  $.getJSON(exercise,function(data){
+    var exercise = data.stream;
+    console.log(exercise);
+
   });
 });
-
-// lestream

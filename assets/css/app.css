@@ -40,6 +40,11 @@ position: relative;
 }
 
 
+/*Header*/
+#header{
+  text-align: center;
+}
+
 /*Footer*/
 footer{
   font-family: inherit;
