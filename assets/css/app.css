@@ -39,12 +39,17 @@ position: relative;
   color: white;
 }
 
-
 /*Header*/
 #header{
   text-align: center;
 }
 
+.results{
+  background-color: #222;
+  border: 1px solid #3b81bf;
+  border-radius: 5px;
+  color: #3B81BF;
+}
 /*Footer*/
 footer{
   font-family: inherit;
