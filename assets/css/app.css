@@ -50,6 +50,9 @@ position: relative;
   border-radius: 5px;
   color: #3B81BF;
 }
+a.nav-link.active{
+  background-color:green;
+}
 /*Footer*/
 footer{
   font-family: inherit;
