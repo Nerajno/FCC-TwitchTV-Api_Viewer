@@ -1,4 +1,5 @@
-var channels =["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "comster404","RealKraftyy?"];
+var channels =["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", 
+               "RobotCaleb", "noobs2ninjas", "brunofin", "comster404","RealKraftyy?"];
 //Runs Jquery
 $(document).ready(function(){
   // Fetches FCC Stream info and api status call
