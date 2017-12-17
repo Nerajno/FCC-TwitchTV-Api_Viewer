@@ -1,5 +1,3 @@
-
-
 var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx",
     "RobotCaleb", "noobs2ninjas", "brunofin", "comster404", "RealKraftyy?"];
 
@@ -12,14 +10,18 @@ function individualIteration(i) {
            console.log(channels[i]);
         }
          }
-$(document).ready(function () {
+$(document).ready(function (){
+      console.log(channels);
+      console.log(channels.length);
     for (var i = 0; i < channels.length; i++) {
       var apiSegmentTwo = apiSegmentOne+channels[i];
        $.getJSON(apiSegmentTwo, function (data) {
          var intitalData = data.stream;
-         var test = data.links;
+         var test = data._links.channel;
+          var conversion =test.split("/").pop();
+          // console.log(conversion);
       if (intitalData === null) {
-        console.log("The channel is offline.");
+         console.log(conversion+" is offline.");
       } else {
          var user = data.stream.channel.display_name;
         console.log(user+" is online.");
