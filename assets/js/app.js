@@ -11,8 +11,8 @@ function individualIteration(i) {
         }
          }
 $(document).ready(function (){
-      console.log(channels);
-      console.log(channels.length);
+      // console.log(channels);
+      console.log(channels.length, channels);
     for (var i = 0; i < channels.length; i++) {
       var apiSegmentTwo = apiSegmentOne+channels[i];
        $.getJSON(apiSegmentTwo, function (data) {
@@ -24,7 +24,17 @@ $(document).ready(function (){
          console.log(conversion+" is offline.");
       } else {
          var user = data.stream.channel.display_name;
+         var info = data.stream;
+         var gameName = data.stream.channel.game;
+         let status = data.stream.channel.status;
+         let viewers = data.stream.viewers;
+         let logo = data.stream.channel.logo;
+         let channelAddress = data.stream.channel.url;
         console.log(user+" is online.");
+        console.log("Each Info", info, gameName, status, viewers, logo,
+        channelAddress);
+
+
       }
        });
     }
