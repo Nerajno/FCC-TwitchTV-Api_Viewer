@@ -51,7 +51,7 @@ position: relative;
   color: #3B81BF;
 }
 a.nav-link.active{
-  background-color:green;
+  /*background-color:green;*/
 }
 /*Footer*/
 footer{
@@ -80,4 +80,10 @@ footer{
 .btn-navbar{
   background-color: #f0641f;
   color: black;
+}
+/*testing*/
+.lettuce{
+  text-align: center;
+  color:#fff !important;
+  font-family: 'Montserrat', sans-serif;
 }
