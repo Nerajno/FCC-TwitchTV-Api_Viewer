@@ -24,14 +24,15 @@ $(document).ready(function() {
       var intitalData = data.stream;
       var test = data._links.channel;
       var convertedUserName = test.split("/").pop();
-      $(".userName").text(convertedUserName);
-      console.log(conversion);
+      $(".userName").append(convertedUserName+" ");
+      console.log(convertedUserName);
       if (intitalData === null) {
-        console.log(conversion + " is offline.");
+        console.log(convertedUserName + " is offline.");
         // NOTE:  need to add condition, if channel was never present.
       } else {
         var user = data.stream.channel.display_name;
-      $(".userName").text(user);
+      $(".userName").append(user);
+
         // $('#userName')
         var info = data.stream;
         var gameName = data.stream.channel.game;
