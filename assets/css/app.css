@@ -42,6 +42,15 @@ position: relative;
 /*Header*/
 #header{
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
+  border:#3B81BF 2px solid;
+  margin-bottom: 3%;
+}
+
+/*Freecodecamp status */
+.fa-times-circle{
+  color: red;
 }
 
 .results{

@@ -24,14 +24,14 @@ $(document).ready(function() {
       var intitalData = data.stream;
       var test = data._links.channel;
       var convertedUserName = test.split("/").pop();
-      $(".userName").append(convertedUserName+" ");
+      $(".userName").append(convertedUserName+" is online.");
       console.log(convertedUserName);
       if (intitalData === null) {
         console.log(convertedUserName + " is offline.");
         // NOTE:  need to add condition, if channel was never present.
       } else {
         var user = data.stream.channel.display_name;
-      $(".userName").append(user);
+      $(".userName").append(user+" is offline.");
 
         // $('#userName')
         var info = data.stream;
@@ -40,7 +40,6 @@ $(document).ready(function() {
         let viewers = data.stream.viewers;
         let logo = data.stream.channel.logo;
         let channelAddress = data.stream.channel.url;
-
         console.log(user + " is online.");
         console.log("Each Info", info, gameName, status, viewers, logo,
           channelAddress);
