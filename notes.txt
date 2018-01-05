@@ -1,9 +1,10 @@
 -Need to append all the results an individual div in accordion form
 - https://codepen.io/losol/pen/WRLGQp
 - https://www.w3schools.com/howto/howto_js_accordion.asp
+-https://getbootstrap.com/docs/4.0/components/collapse/#accordion-example
 
 if channel online[ background color = one color ]
 else:
 channel offline [ background color = other color]
 
-Need notes and due dates for each session 
+Need notes and due dates for each session
