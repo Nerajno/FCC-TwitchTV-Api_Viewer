@@ -120,7 +120,8 @@ footer{
     display: none;
     background-color: white;
 }
-.logo{
-  width: 150px;
-  height: 150px;
+
+img{
+width: 250px;
+height: auto;
 }
