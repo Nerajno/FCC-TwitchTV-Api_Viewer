@@ -78,14 +78,6 @@ footer{
   border-color: black;
 }
 
-/*.Twtbtn:hover{
-  transform: scale(2.5);
-}*/
-
-/*.fa-twitter:hover{
-  transform: scale(4) rotate(360deg);
-}*/
-
 .btn-navbar{
   background-color: #f0641f;
   color: black;
@@ -116,7 +108,7 @@ footer{
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 10px 18px;
     display: none;
     background-color: white;
 }
@@ -124,4 +116,14 @@ footer{
 img{
 width: 250px;
 height: auto;
+}
+
+.card{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-block{
+margin-top: 40px; 
 }
