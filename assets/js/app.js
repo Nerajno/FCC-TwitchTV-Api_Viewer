@@ -31,7 +31,7 @@ $(document).ready(function() {
         //This writes the information to a card... I know that there is an easier way but I dont know it yet.
         $(".tab-main-content").append('<div><button class="accordion">'+'<i class="fa fa-window-close" aria-hidden="true"></i>'+' '+convertedUserName
         +' is offline.'+'</button><panel><div class="container py-3"><div class="card"><div class="row"><div class="col-md-4"><img src="https://farm5.staticflickr.com/4675/24807227997_48796d28ea.jpg"></div><div class="col-md-8"><div class="card-block px-3">'+
-        '<p class='+gameName+'> Game Name: '+gameName+'</p><p class='+status+'> Current Game Status : '+status+'</p><p class='+viewers+'> Live Viewers :'+viewers+'</p><p class='+channelAddress+'><a href='+channelAddress+'> Channel Web Address :'+channelAddress +' '+'<i class="fa fa-external-link" aria-hidden="true"></i></a></p></div></div></div></div></div></panel></div>');
+        '<p class='+gameName+'> Game Name: '+gameName+'</p><p class='+status+'> Current Game Status : '+status+'</p><p class='+viewers+'> Live Viewers : '+viewers+'</p><p class='+channelAddress+'><a target="_blank" href='+channelAddress+'> Channel Web Address : '+channelAddress +' '+'<i class="fa fa-external-link" aria-hidden="true"></i></a></p></div></div></div></div></div></panel></div>');
         //Writing the offline channels to an array
         var offline = [ ];
         var offlineList = offline.push(convertedUserName);
@@ -50,7 +50,7 @@ $(document).ready(function() {
         //This writes the information to a card... I know that there is an easier way but I dont know it yet.
         $(".tab-main-content").append('<div><button class="accordion">'+'<i class="fa fa-television" aria-hidden="true"></i> '+convertedUserName+
         ' is online.'+'</button><panel><div class="container py-3"><div class="card"><div class="row"><div class="col-md-4"><img src='+logo+'></div><div class="col-md-8"><div class="card-block px-3">'+
-        '<p class='+gameName+'>Game Name: '+gameName+'</p><p class='+status+'> Current Game Status : '+status+'</p><p class='+viewers+'> Live Viewers : '+viewers+' viewers online.</p><p class='+channelAddress+'><a href='+channelAddress+'> Channel Web Address :'+channelAddress +' '+
+        '<p class='+gameName+'>Game Name: '+gameName+'</p><p class='+status+'> Current Game Status : '+status+'</p><p class='+viewers+'> Live Viewers : '+viewers+' viewers online.</p><p class='+channelAddress+'><a target="_blank" href='+channelAddress+'> Channel Web Address : '+channelAddress +' '+
         '<i class="fa fa-external-link" aria-hidden="true"></i></a></p></div></div></div></div></div></panel></div>');
         //Writing the offline channels to an array
         let onlineArray = [];
