@@ -1,10 +1,7 @@
--Need to append all the results an individual div in accordion form
-- https://codepen.io/losol/pen/WRLGQp
-- https://www.w3schools.com/howto/howto_js_accordion.asp
--https://getbootstrap.com/docs/4.0/components/collapse/#accordion-example
 
-if channel online[ background color = one color ]
-else:
-channel offline [ background color = other color]
-
-Need notes and due dates for each session
+next Session
+*Append to new tab onclick for online cards
+*Append to new tab onclick for offline cards
+*Created card/panel for called  that never existed
+***fix the accordion feature
+*** fix the toggle feature for the other projects
