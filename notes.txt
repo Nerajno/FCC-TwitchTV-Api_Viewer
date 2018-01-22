@@ -5,3 +5,6 @@ next Session
 *Created card/panel for called  that never existed
 ***fix the accordion feature
 *** fix the toggle feature for the other projects
+
+
+https://api.twitch.tv/kraken/channels/user_to_test// Never existed
