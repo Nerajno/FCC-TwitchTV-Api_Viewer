@@ -16,10 +16,7 @@ $.getJSON(freecodecampChecker, function(data) {
   }
 });
 
-
-
-//Running for each itteration
-//This helped me to run the function channel by channel.
+//Running for each itteration, this helped me to run the function channel by channel.
 //https://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
 function individualIteration(i) {
   console.log();
@@ -46,7 +43,7 @@ $(document).ready(function() {
         let channelAddress = "N/A..... offline";
         //This writes the information to a card... I know that there is an easier way but I dont know it yet.
         $(".tab-main-content").append(
-          `<div>
+          `<div class='offline'>
             <button class="accordion" data-channel=${convertedUserName} data-collapse="closed">
               <i class="fa fa-window-close" aria-hidden="true"></i> ${convertedUserName} is offline.
             </button>
@@ -73,12 +70,10 @@ $(document).ready(function() {
         );
 
       //  $('.tab-main-content').append('<button class="btn" data-toggle="collapse" data-target="#demo">Collapsible</button><div id="demo" class="collapse">Some text..</div>')
-
      //  // NOTE: testing
      // $(".tab-main-content").append('<div class="panel-group accordion" id="accordion"><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse"'+
      // ' data-parent="#accordion" href="#collapse1">'+ convertedUserName +'</a></h4></div><div id="collapse1" class="panel-collapse collapse in"><div class="panel-body">Lorem ipsum dolor sit amet, consectetur'+
      // 'adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div></div>')
-
       // //   }else if (intitalData ===){
       // //
       //
@@ -90,8 +85,8 @@ $(document).ready(function() {
       //   //   "status":404,
       //   //   "message":"Channel 'user_to_test' does not exist"
       //   // }
-       }else {
 
+       }else{
         var user = data.stream.channel.display_name;
         var info = data.stream;
         var gameName = data.stream.channel.game;
@@ -100,22 +95,39 @@ $(document).ready(function() {
         let logo = data.stream.channel.logo;
         let channelAddress = data.stream.channel.url;
         //This writes the information to a card... I know that there is an easier way but I dont know it yet.
-        $(".tab-main-content").append('<div class=""><button class="accordion">' + '<i class="fa fa-television" aria-hidden="true"></i> ' + convertedUserName +
-          ' is online.' + '</button><panel><div class="container py-3"><div class="card"><div class="row"><div class="col-md-4"><img src=' + logo + '></div><div class="col-md-8"><div class="card-block px-3">' +
-          '<p class=' + gameName + '>Game Name: ' + gameName + '</p><p class=' + status + '> Current Game Status : ' + status + '</p><p class=' + viewers + '> Live Viewers : ' + viewers + ' viewers online.</p><p class=' + channelAddress + '><a target="_blank" href=' + channelAddress + '> Channel Web Address : ' + channelAddress + ' ' +
-          '<i class="fa fa-external-link" aria-hidden="true"></i></a></p></div></div></div></div></div></panel></div>');
+        $(".tab-main-content").append(
+          `<div class="online">
+            <button class="accordion" data-channel=${convertedUserName} data-collapse="closed">
+             <i class="fa fa-television" aria-hidden="true"></i> ${convertedUserName}  is online.
+             </button>
+             <panel class="panel">
+              <div class="container py-3">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="${logo}">
+                    </div>
+                <div class="col-md-8">
+              <div class="card-block px-3">
+                <p>
+                Game Name: ${gameName}<br>
+                Current Game Status: ${status}<br>
+                Live Viewers: ${viewers}<br>
+                <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twich channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </panel>
+    </div>`);
       }
     });
   }
-
-
-
 });
 
-
+//Click functions that make the buttons wrk.. accordians
 $(document.body).on("click", "button", function(event) {
       this.classList.toggle("active");
-
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -124,3 +136,15 @@ $(document.body).on("click", "button", function(event) {
             panel.style.display = "block";
         }
 })
+
+
+//Sort online tab
+$(document.body).on('click', ".online", function(event){
+  $(".online").append('div class="online"></div>')
+      console.log("this wrks");
+});
+// Sort offline tab
+$(document.body).on('click', ".offline", function(event){
+  $(".online").append('div class="onffline"></div>')
+      console.log("this wrks");
+      });
