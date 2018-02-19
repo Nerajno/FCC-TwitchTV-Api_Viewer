@@ -7,7 +7,7 @@ var apiSegmentOne = "https://wind-bow.glitch.me/twitch-api/streams/";
 
 var freecodecampChecker = apiSegmentOne + channels[3];
 $.getJSON(freecodecampChecker, function(data) {
-  console.log(freecodecampChecker);
+  // console.log(freecodecampChecker);
   var streamStatus = data.stream;
   if (streamStatus === null) {
     console.log("Aint Wrking");
@@ -19,7 +19,6 @@ $.getJSON(freecodecampChecker, function(data) {
 //Running for each itteration, this helped me to run the function channel by channel.
 //https://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
 function individualIteration(i) {
-  console.log();
   return function() {};
 }
 $(document).ready(function() {
@@ -27,8 +26,8 @@ $(document).ready(function() {
   for (var i = 0; i < channels.length; i++) {
     var apiSegmentTwo = apiSegmentOne + channels[i];
     $.getJSON(apiSegmentTwo, function(data) {
-      var tits = data.error;
-      console.log(tits);
+      var error = data.error;
+      console.log(error);
       var intitalData = data.stream;
       // console.log(intitalData);
       var test = data._links.channel;
@@ -60,7 +59,11 @@ $(document).ready(function() {
                       Game Name: ${gameName}<br>
                       Current Game Status: ${status}<br>
                       Live Viewers: ${viewers}<br>
+<<<<<<< HEAD
+                      <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twitch channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+=======
                       <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twich channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+>>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7
                     </p>
                   </div>
                 </div>
@@ -113,7 +116,11 @@ $(document).ready(function() {
                 Game Name: ${gameName}<br>
                 Current Game Status: ${status}<br>
                 Live Viewers: ${viewers}<br>
+<<<<<<< HEAD
+                <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twitch channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+=======
                 <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twich channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+>>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7
               </p>
             </div>
           </div>
@@ -138,6 +145,20 @@ $(document.body).on("click", "button", function(event) {
 })
 
 
+<<<<<<< HEAD
+// //Sort online tab
+// $(document.body).on('click', ".online", function(event){
+//   $(".online").append('div class="online"></div>')
+//       console.log("this wrks");
+// // NOTE: so I need this to refresh each and show the channels that were online.
+// });
+// // Sort offline tab
+// $(document.body).on('click', ".offline", function(event){
+//   $(".online").append('div class="onffline"></div>')
+//       console.log("this wrks");
+//       });
+// // NOTE: so I need this to refresh each and show the channels that were offline.
+=======
 //Sort online tab
 $(document.body).on('click', ".online", function(event){
   $(".online").append('div class="online"></div>')
@@ -148,3 +169,4 @@ $(document.body).on('click', ".offline", function(event){
   $(".online").append('div class="onffline"></div>')
       console.log("this wrks");
       });
+>>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7

@@ -59,9 +59,7 @@ position: relative;
   border-radius: 5px;
   color: #3B81BF;
 }
-a.nav-link.active{
-  /*background-color:green;*/
-}
+
 /*Footer*/
 footer{
   font-family: inherit;
@@ -102,7 +100,14 @@ footer{
   outline: none;
   transition: 0.4s;
 }
+<<<<<<< HEAD
+/* NOTE: The icons in the offline tabs  */
+.fa-window-close{
+  color: red;
+}
+=======
 
+>>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
@@ -120,6 +125,7 @@ footer{
 img{
 width: 250px;
 height: auto;
+margin: 7px;
 }
 
 .card{
