@@ -59,11 +59,15 @@ $(document).ready(function() {
                       Game Name: ${gameName}<br>
                       Current Game Status: ${status}<br>
                       Live Viewers: ${viewers}<br>
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
                       <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twitch channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
 =======
                       <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twich channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
 >>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7
+=======
+                      <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twitch channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+>>>>>>> css changes
                     </p>
                   </div>
                 </div>
@@ -116,11 +120,15 @@ $(document).ready(function() {
                 Game Name: ${gameName}<br>
                 Current Game Status: ${status}<br>
                 Live Viewers: ${viewers}<br>
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
                 <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twitch channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
 =======
                 <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twich channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
 >>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7
+=======
+                <a target="_blank" href="https://www.twitch.tv/${convertedUserName}">Link to Twitch channel <i class="fa fa-external-link" aria-hidden="true"></i></a>
+>>>>>>> css changes
               </p>
             </div>
           </div>
@@ -145,7 +153,10 @@ $(document.body).on("click", "button", function(event) {
 })
 
 
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
+=======
+>>>>>>> css changes
 // //Sort online tab
 // $(document.body).on('click', ".online", function(event){
 //   $(".online").append('div class="online"></div>')
@@ -158,6 +169,7 @@ $(document.body).on("click", "button", function(event) {
 //       console.log("this wrks");
 //       });
 // // NOTE: so I need this to refresh each and show the channels that were offline.
+<<<<<<< refs/remotes/origin/master
 =======
 //Sort online tab
 $(document.body).on('click', ".online", function(event){
@@ -170,3 +182,5 @@ $(document.body).on('click', ".offline", function(event){
       console.log("this wrks");
       });
 >>>>>>> 25e903f43b9249586033637186e1ccb82b4daae7
+=======
+>>>>>>> css changes
