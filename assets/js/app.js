@@ -149,16 +149,17 @@ $(document.body).on("click", "button", function(event) {
 //       });
 // // NOTE: so I need this to refresh each and show the channels that were offline.
 
+//When you click online it hides offline and shows online
 $('#onlinetab').click(function(){
   $('.offline').hide();
   $('.online').show();
 });
-
+//When you click offline it hides online and shows offline
 $('#offlinetab').click(function(){
   $('.online').hide();
   $('.offline').show();
 });
-              
+//When you click all channels it shows both online and offline              
 $('#all-channels').click(function(){
   $('.online').show();
   $('.offline').show();
