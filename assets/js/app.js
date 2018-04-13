@@ -148,3 +148,7 @@ $(document.body).on("click", "button", function(event) {
 //       console.log("this wrks");
 //       });
 // // NOTE: so I need this to refresh each and show the channels that were offline.
+
+$('#online').click(function(){
+  $('.tab-main-content').hide();
+});
