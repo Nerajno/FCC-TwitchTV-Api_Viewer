@@ -155,6 +155,5 @@ $(document.body).on('click', ".online", function(event){
 });
 // Sort offline tab
 $(document.body).on('click', ".offline", function(event){
-  $(".online").append('div class="onffline"></div>')
-      console.log("this wrks");
+  $(".offline").hide();
       });
