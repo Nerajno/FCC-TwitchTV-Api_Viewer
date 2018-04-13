@@ -159,7 +159,7 @@ $('#offlinetab').click(function(){
   $('.offline').show();
 });
               
-$('#all-channels').click(function(){
-  $('.online').show();
-  $('.offline').show();
-});
+// $('#all-channels').click(function(){
+//   $('.online').show();
+//   $('.offline').show();
+// });
