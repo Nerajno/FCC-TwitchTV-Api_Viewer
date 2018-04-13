@@ -149,12 +149,12 @@ $(document.body).on("click", "button", function(event) {
 //       });
 // // NOTE: so I need this to refresh each and show the channels that were offline.
 
-$('#online').click(function(){
+$('#onlinetab').click(function(){
   $('.offline').hide();
   $('.online').show();
 });
 
-$('#offline').click(function(){
+$('#offlinetab').click(function(){
   $('.online').hide();
   $('.offline').show();
 });
