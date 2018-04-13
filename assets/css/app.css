@@ -112,6 +112,13 @@ footer{
   display: none;
   overflow: hidden;
 }
+/*Styling the tabs*/
+#onlinetab{
+  background-color: #222;
+  padding: 0. 18px;
+  display: none;
+  overflow: hidden;
+}
 /* NOTE: end of appended data */
 
 img{
