@@ -151,9 +151,11 @@ $(document.body).on("click", "button", function(event) {
 
 $('#online').click(function(){
   $('.offline').hide();
+  $('.online').show();
 });
 
 $('#offline').click(function(){
   $('.online').hide();
+  $('.offline').show();
 });
               
