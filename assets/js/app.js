@@ -150,10 +150,9 @@ $(document.body).on("click", "button", function(event) {
 // // NOTE: so I need this to refresh each and show the channels that were offline.
 //Sort online tab
 $(document.body).on('click', ".online", function(event){
-  $(".online").append('div class="online"></div>')
-      console.log("this wrks");
+  $('.tab-main-content').hide();
 });
 // Sort offline tab
 $(document.body).on('click', ".offline", function(event){
-  $(".offline").hide();
+  $('.tab-main-content').hide();
       });
