@@ -1,13 +1,14 @@
+//All the channels stored in a variable
 var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx",
   "RobotCaleb", "noobs2ninjas", "brunofin", "comster404", "RealKraftyy?","user_to_test"
 ];
 
-
+//Api Call via bypass
 var apiSegmentOne = "https://wind-bow.glitch.me/twitch-api/streams/";
 
+//Freecodecamp api call
 var freecodecampChecker = apiSegmentOne + channels[3];
 $.getJSON(freecodecampChecker, function(data) {
-  // console.log(freecodecampChecker);
   var streamStatus = data.stream;
   if (streamStatus === null) {
     console.log("Aint Wrking");
@@ -22,7 +23,6 @@ function individualIteration(i) {
   return function() {};
 }
 $(document).ready(function() {
-  // console.log(channels.length, channels);
   for (var i = 0; i < channels.length; i++) {
     var apiSegmentTwo = apiSegmentOne + channels[i];
     $.getJSON(apiSegmentTwo, function(data) {
@@ -67,24 +67,6 @@ $(document).ready(function() {
             </panel>
           </div>`
         );
-
-      //  $('.tab-main-content').append('<button class="btn" data-toggle="collapse" data-target="#demo">Collapsible</button><div id="demo" class="collapse">Some text..</div>')
-     //  // NOTE: testing
-     // $(".tab-main-content").append('<div class="panel-group accordion" id="accordion"><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse"'+
-     // ' data-parent="#accordion" href="#collapse1">'+ convertedUserName +'</a></h4></div><div id="collapse1" class="panel-collapse collapse in"><div class="panel-body">Lorem ipsum dolor sit amet, consectetur'+
-     // 'adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div></div>')
-      // //   }else if (intitalData ===){
-      // //
-      //
-      //
-      //   // NOTE:  need to add condition, if channel was never present.
-      //   // NOTE: Found it
-      //   //         {
-      //   //   "error":"Not Found",
-      //   //   "status":404,
-      //   //   "message":"Channel 'user_to_test' does not exist"
-      //   // }
-
        }else{
         var user = data.stream.channel.display_name;
         var info = data.stream;
@@ -124,7 +106,7 @@ $(document).ready(function() {
   }
 });
 
-//Click functions that make the buttons wrk.. accordians
+//Click functions that make the Accordians
 $(document.body).on("click", "button", function(event) {
       this.classList.toggle("active");
         /* Toggle between hiding and showing the active panel */
@@ -136,19 +118,6 @@ $(document.body).on("click", "button", function(event) {
         }
 })
 
-// //Sort online tab
-// $(document.body).on('click', ".online", function(event){
-//   $(".online").append('div class="online"></div>')
-//       console.log("this wrks");
-// // NOTE: so I need this to refresh each and show the channels that were online.
-// });
-// // Sort offline tab
-// $(document.body).on('click', ".offline", function(event){
-//   $(".online").append('div class="onffline"></div>')
-//       console.log("this wrks");
-//       });
-// // NOTE: so I need this to refresh each and show the channels that were offline.
-
 //When you click online it hides offline and shows online
 $('#onlinetab').click(function(){
   $('.offline').hide();
@@ -159,7 +128,7 @@ $('#offlinetab').click(function(){
   $('.online').hide();
   $('.offline').show();
 });
-//When you click all channels it shows both online and offline              
+
 $('#all-channels').click(function(){
   $('.online').show();
   $('.offline').show();
