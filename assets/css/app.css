@@ -48,6 +48,10 @@ position: relative;
   margin-bottom: 3%;
 }
 
+.fab-free-code-camp {
+  color: #006400;
+}
+
 /*Freecodecamp status */
 .fa-times-circle{
   color: red;
