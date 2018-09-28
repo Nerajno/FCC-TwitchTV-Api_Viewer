@@ -40,6 +40,10 @@ position: relative;
   width:100%; 
 }
 
+.header,.results{
+  width:90%;
+}
+
 /*Header*/
 #header{
   text-align: center;
