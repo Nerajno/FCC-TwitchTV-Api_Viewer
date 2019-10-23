@@ -118,7 +118,6 @@ $(document.body).on("click", "button", function(event) {
         }
 })
 
-//Toggle for all the channels, online channnels and offline channels
 //When you click online it hides offline and shows online
 $('#onlinetab').click(function(){
   $('.offline').hide();
@@ -129,7 +128,7 @@ $('#offlinetab').click(function(){
   $('.online').hide();
   $('.offline').show();
 });
-//When you click all channels it shows both online and offline
+
 $('#all-channels').click(function(){
   $('.online').show();
   $('.offline').show();

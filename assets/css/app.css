@@ -121,6 +121,10 @@ footer{
   display: none;
   overflow: hidden;
 }
+/*Styling the tabs*/
+#onlinetab, #offlinetab, #all-channels{
+  background-color: #222;
+}
 /* NOTE: end of appended data */
 
 img{
@@ -140,3 +144,4 @@ margin-top: 40px;
 .fa-television{
   color: green;
 }
+ 
