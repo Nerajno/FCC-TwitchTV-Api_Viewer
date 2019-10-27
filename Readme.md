@@ -1,7 +1,9 @@
 
-# TwitchTV-Viewer Version 0.24
-This is the TwitchTV-Viewer from Free Code Camp's Front Certificate, through it's iteration it has used a couple of ideas and code from other places. The code is a bit hodge podge but like all great tinkers dreaming of being an engineer; IT WORKS.
+# TwitchTV-Viewer 
+This is the TwitchTV-Viewer from Free Code Camp's Front Certificate, through it's iteration it has used a couple of ideas and code from other places. The code may need to be refactored. 
 https://nerajno.github.io/FCC-TwitchTV-Viewer/
+
+
 
 
 
